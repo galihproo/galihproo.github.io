@@ -14,7 +14,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
+        <div class="container-lg">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,12 +38,12 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="hero-text">
                         <h1>Hello!</h1>
-                        <p>I'm a <span>Front End</span> Web Developer</p>
+                        <p>I'm a <span>Frontend</span> Web Developer</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -62,8 +62,8 @@
 
         <!-- My Skills -->
         <section class="skills text-center">
-            <div class="container">
-                <h2>My Skills</h2>
+            <div class="container-lg">
+                <h2 class="text-center">My Skills</h2>
                 <div class="skills-row">
                     <div class="skill-item">
                         <img class="icon-skill" src="./images/ic-html5.svg" alt="icon-skill">
@@ -87,13 +87,13 @@
         <!-- My Skills End -->
         <!-- About -->
         <section class="about" id="section-about">
-            <div class="container">
-                <h2>About Me</h2>
+            <div class="container-lg">
+                <h2 class="text-center">About Me</h2>
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <div class="about-card">
                             <div class="title">Profile</div>
-                            <div class="content">
+                            <!-- <div class="content">
                                 <div class="content-left">
                                     <p>Full Name</p>
                                     <p>Date of Birth</p>
@@ -108,24 +108,46 @@
                                     </p>
                                     <p>Purwokerto, Central Java, Indonesia</p>
                                 </div>
-                            </div>
+                            </div> -->
+                            <table class="content">
+                                <tr>
+                                    <td>Full Name</td>
+                                    <td>Galih Prihananto</td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>1 June 2003</td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        <a href="mailto:galihprihananto29@gmail.com?">galihprihananto29@gmail.com</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>Purwokerto, Central Java, Indonesia</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6">
                         <div class="about-card">
                             <div class="title">Education</div>
-                            <div class="content">
-                                <div class="content-left">
-                                    <p>SDN 2 Karang Pucung</p>
-                                    <p>SMP Negri 8 Purwokerto</p>
-                                    <p>SMK Telkom Purwokerto</p>
-                                </div>
-                                <div class="content-right">
-                                    <p>2009 -2015</p>
-                                    <p>2015 - 2018</p>
-                                    <p>2018 - Now</p>
-                                </div>
-                            </div>
+                            <table class="content">
+                                <tr>
+                                    <td>SDN 2 Karang Pucung</td>
+                                    <td>2009 - 2015</td>
+                                </tr>
+                                <tr>
+                                    <td>SMP Negeri 8 Purwokerto</td>
+                                    <td>2015 - 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>SMK Telkom Purwokerto</td>
+                                    <td>2018 - Present</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -135,24 +157,28 @@
 
         <!-- Portfolio -->
         <section class="portfolio" id="section-portfolio">
-            <div class="container">
-                <h2>My Recent Portfolio</h2>
+            <div class="container-lg">
+                <h2 class="text-center">My Recent Portfolio</h2>
                 <div class="row portfolio-row">
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 card-portfolio">
+                        <a href="https://osis.smktelkom-pwt.sch.id/" target="_blank">
+                            <div class="portfolio-content">
+                                <img src="./images/portfolio3-img.png" alt="portfolio-image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 card-portfolio">
+                        <a href="https://galihproo.github.io/CourseIn-Online-Course-Website/" target="_blank">
+                            <div class="portfolio-content">
+                                <img src="./images/portfolio2-img.png" alt="portfolio-image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-4 card-portfolio">
                         <a href="https://galihproo.github.io/TravellinKuy-Website/" target="_blank">
                             <div class="portfolio-content">
                                 <img src="./images/portfolio-img.png" alt="portfolio-image">
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="portfolio-content"></div>
-                        </a>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <a href="#">
-                            <div class="portfolio-content"></div>
                         </a>
                     </div>
                 </div>
@@ -162,8 +188,8 @@
 
         <!-- Social Media -->
         <section class="social text-center" id="section-social">
-            <div class="container">
-                <h2>You Can Find Me at</h2>
+            <div class="container-lg">
+                <h2 class="text-center">You Can Find Me at</h2>
                 <div class="social-media-row">
                     <div class="social-link">
                         <a href="https://web.facebook.com/galih.p.33865?_rdc=1&_rdr" target="_blank">
@@ -186,6 +212,7 @@
                         </a>
                     </div>
                 </div>
+                <strong></strong>
             </div>
         </section>
         <!-- Social Media End -->
@@ -201,7 +228,7 @@
     <!-- Footer End -->
 
 
-    
+
     <!-- JQuery -->
     <script src="./libraries/jquery/jquery-3.4.1.min.js"></script>
     <!-- Bootstrap JS -->

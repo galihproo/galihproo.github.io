@@ -204,16 +204,19 @@ header {
         }
 
         .content {
-            display: flex;
+            border: none;
             width: 100%;
-            justify-content: space-between;
             margin-top: 40px;
 
-            p,
-            a {
-                color: $black;
-                font-size: 20px;
-                margin-bottom: 16px;
+            tr {
+                td,
+                a {
+                    color: $black;
+                    font-size: 18px;
+                }
+                td {
+                    padding: 15px 0;
+                }
             }
         }
     }
@@ -238,6 +241,7 @@ header {
             height: 300px;
             border-radius: 100px 20px;
             margin: 40px 0 0;
+            box-shadow: 8px 8px 40px #e4e4e4;
 
             img {
                 width: 100%;
@@ -343,11 +347,21 @@ footer {
         .hero-text {
             padding-top: 80px;
             margin-bottom: 80px;
+            text-align: center;
+
+            h1 {
+                margin-bottom: 14px;
+            }
+        }
+
+        .hero-image {
+            width: 70%;
+            margin: 0 auto;
         }
     }
 
     .skills {
-        margin-top: 200px;
+        margin-top: 300px;
     }
 
     .portfolio {
@@ -364,8 +378,184 @@ footer {
                 width: 70px;
                 height: 70px;
 
-                img {
+                a {
                     width: 70%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        height: auto;
+
+        .hero-text {
+            padding-top: 50px;
+            margin-bottom: 50px;
+            p {
+                font-size: 22px;
+            }
+        }
+
+        .hero-image {
+            width: 80%;
+        }
+    }
+    .skills {
+        margin-top: 100px;
+
+        .skills-row {
+            padding: 0 40px;
+
+            .skill-item {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+    .about {
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 44px;
+            color: $black;
+            margin: 0;
+        }
+
+        .about-card {
+            min-height: 320px;
+
+            .title {
+                font-size: 18px;
+                width: 140px;
+                border-radius: 16px;
+            }
+            tr {
+                margin-bottom: 16px;
+
+                td,
+                a {
+                    color: $black;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .portfolio {
+        .portfolio-row {
+            display: block;
+
+            .card-portfolio {
+                max-width: 60%;
+                margin: 10px auto;
+            }
+        }
+    }
+    .social {
+        .social-media-row {
+            justify-content: center;
+            .social-link {
+                width: 40px;
+                height: 40px;
+                margin: 0 10px;
+
+                a {
+                    width: 20px;
+
+                    img {
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .skills {
+        h2 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+    }
+    .about {
+        h2 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+
+        .about-card {
+            padding: 20px;
+
+            .title {
+                font-size: 16px;
+                width: 120px;
+                border-radius: 17px;
+                margin: 0 auto;
+            }
+            .content {
+                tr {
+                    td,
+                    a {
+                        color: $black;
+                        font-size: 15px;
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .portfolio {
+        h2 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        .portfolio-row {
+            .card-portfolio {
+                max-width: 100%;
+            }
+        }
+    }
+    .social h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        .hero-image {
+            width: 90%;
+        }
+    }
+    .skills {
+        .skills-row {
+            padding: 0 20px;
+            flex-wrap: wrap;
+
+            .skill-item {
+               margin: 15px 10px;
+            }
+
+            .skill-item:last-child {
+                margin: 15px auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .about {
+        .about-card {
+            .content {
+                tr {
+                    td,
+                    a {
+                        color: $black;
+                        font-size: 13px;
+                        margin-bottom: 16px;
+                    }
                 }
             }
         }
