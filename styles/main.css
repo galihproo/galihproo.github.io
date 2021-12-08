@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap");
+body {
+  background-color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-top: 30px;
+}
+
+.navbar .navbar-toggler {
+  -webkit-filter: invert(100%) sepia(28%) saturate(5743%) hue-rotate(311deg) brightness(92%) contrast(104%);
+          filter: invert(100%) sepia(28%) saturate(5743%) hue-rotate(311deg) brightness(92%) contrast(104%);
+}
+
+.navbar .nav-link {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 40px;
+}
+
+.navbar .nav-link::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #efb960;
+  border-radius: 20px 5px;
+  z-index: 1;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+          transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.navbar .nav-link .link {
+  font-size: 20px;
+  color: #333 !important;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  text-decoration: none;
+}
+
+.navbar .nav-link:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar .nav-link:hover .link {
+  color: #fff !important;
+}
+
+header {
+  height: 100vh;
+}
+
+header .hero-text {
+  padding-top: 200px;
+}
+
+header .hero-text h1 {
+  font-size: 60px;
+  line-height: 62px;
+  font-weight: bold;
+  color: #333;
+}
+
+header .hero-text p {
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+header .hero-text p span {
+  color: #efb960;
+  font-weight: bold;
+}
+
+header .hero-image {
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  margin-right: 8%;
+}
+
+header .hero-image .border-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 8%;
+  left: 8%;
+}
+
+header .hero-image .my-image {
+  width: 100%;
+  z-index: 2;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+header .hero-image:hover .my-image {
+  -webkit-transform: translate(8%, 8%);
+          transform: translate(8%, 8%);
+}
+
+.skills h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #333;
+  margin: 0;
+}
+
+.skills .skills-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 720px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px auto 0;
+}
+
+.skills .skills-row .skill-item {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.skills .skills-row .skill-item .icon-skill {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.skills .skills-row .skill-item .ic-border {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+.skills .skills-row .skill-item:hover .icon-skill {
+  -webkit-transform: translate(10%, 10%);
+          transform: translate(10%, 10%);
+}
+
+.about {
+  margin-top: 80px;
+}
+
+.about h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #333;
+  margin: 0;
+}
+
+.about .about-card {
+  background-color: #fff3e0;
+  width: 100%;
+  min-height: 360px;
+  color: #333;
+  border-radius: 50px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.about .about-card .title {
+  background-color: #efb960;
+  width: 160px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: #fff3e0;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.about .about-card .content {
+  border: none;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.about .about-card .content tr td,
+.about .about-card .content tr a {
+  color: #333;
+  font-size: 18px;
+}
+
+.about .about-card .content tr td {
+  padding: 15px 0;
+}
+
+.portfolio {
+  margin-top: 100px;
+}
+
+.portfolio h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #333;
+  margin: 0;
+}
+
+.portfolio .portfolio-row .portfolio-content {
+  background-color: #fff3e0;
+  width: 300px;
+  height: 300px;
+  border-radius: 100px 20px;
+  margin: 40px 0 0;
+  -webkit-box-shadow: 8px 8px 40px #e4e4e4;
+          box-shadow: 8px 8px 40px #e4e4e4;
+}
+
+.portfolio .portfolio-row .portfolio-content img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100px 20px;
+}
+
+.social {
+  margin-top: 100px;
+}
+
+.social h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+  color: #333;
+  margin: 0;
+}
+
+.social .social-media-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 600px;
+  margin: 50px auto 0;
+}
+
+.social .social-media-row .social-link {
+  width: 100px;
+  height: 100px;
+  background-color: #fff3e0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.social .social-media-row .social-link img {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  width: 100%;
+}
+
+.social .social-media-row .social-link:hover {
+  background-color: #efb960;
+}
+
+.social .social-media-row .social-link:hover img {
+  -webkit-filter: invert(97%) sepia(100%) saturate(0%) hue-rotate(69deg) brightness(104%) contrast(104%);
+          filter: invert(97%) sepia(100%) saturate(0%) hue-rotate(69deg) brightness(104%) contrast(104%);
+}
+
+footer {
+  margin-top: 80px;
+}
+
+footer p {
+  font-size: 16px;
+  color: #333;
+  width: 160px;
+  margin: 0 auto 15px;
+}
+
+@media (max-width: 991px) {
+  .navbar .navbar-nav {
+    margin-top: 20px;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    width: 150px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  header {
+    margin-top: 80px;
+  }
+  header .hero-text {
+    padding-top: 80px;
+  }
+  .portfolio .portfolio-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    margin-top: 0;
+  }
+  header .hero-text {
+    padding-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  header .hero-text h1 {
+    margin-bottom: 14px;
+  }
+  header .hero-image {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .skills {
+    margin-top: 300px;
+  }
+  .portfolio .portfolio-row .portfolio-content {
+    width: 100%;
+  }
+  .social .social-media-row .social-link {
+    width: 70px;
+    height: 70px;
+  }
+  .social .social-media-row .social-link a {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  header {
+    height: auto;
+  }
+  header .hero-text {
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  header .hero-text p {
+    font-size: 22px;
+  }
+  header .hero-image {
+    width: 80%;
+  }
+  .skills {
+    margin-top: 100px;
+  }
+  .skills .skills-row {
+    padding: 0 40px;
+  }
+  .skills .skills-row .skill-item {
+    width: 50px;
+    height: 50px;
+  }
+  .about h2 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 44px;
+    color: #333;
+    margin: 0;
+  }
+  .about .about-card {
+    min-height: 320px;
+  }
+  .about .about-card .title {
+    font-size: 18px;
+    width: 140px;
+    border-radius: 16px;
+  }
+  .about .about-card tr {
+    margin-bottom: 16px;
+  }
+  .about .about-card tr td,
+  .about .about-card tr a {
+    color: #333;
+    font-size: 15px;
+  }
+  .portfolio .portfolio-row {
+    display: block;
+  }
+  .portfolio .portfolio-row .card-portfolio {
+    max-width: 60%;
+    margin: 10px auto;
+  }
+  .social .social-media-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .social .social-media-row .social-link {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+  }
+  .social .social-media-row .social-link a {
+    width: 20px;
+  }
+  .social .social-media-row .social-link a img {
+    height: 20px;
+  }
+}
+
+@media (max-width: 470px) {
+  .skills h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .about h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .about .about-card {
+    padding: 20px;
+  }
+  .about .about-card .title {
+    font-size: 16px;
+    width: 120px;
+    border-radius: 17px;
+    margin: 0 auto;
+  }
+  .about .about-card .content tr td,
+  .about .about-card .content tr a {
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+  .portfolio h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .portfolio .portfolio-row .card-portfolio {
+    max-width: 100%;
+  }
+  .social h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  header .hero-image {
+    width: 90%;
+  }
+  .skills .skills-row {
+    padding: 0 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skills .skills-row .skill-item {
+    margin: 15px 10px;
+  }
+  .skills .skills-row .skill-item:last-child {
+    margin: 15px auto;
+  }
+}
+
+@media (max-width: 340px) {
+  .about .about-card .content tr td,
+  .about .about-card .content tr a {
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
