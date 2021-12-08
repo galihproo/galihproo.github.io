@@ -73,10 +73,6 @@ body {
   color: #fff !important;
 }
 
-header {
-  height: 100vh;
-}
-
 header .hero-text {
   padding-top: 200px;
 }
@@ -267,6 +263,7 @@ header .hero-image:hover .my-image {
   width: 100%;
   height: 100%;
   border-radius: 100px 20px;
+  object-fit: cover;
 }
 
 .social {
@@ -338,6 +335,12 @@ footer p {
   margin: 0 auto 15px;
 }
 
+@media (min-width: 1199px) {
+  header {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 991px) {
   .navbar .navbar-nav {
     margin-top: 20px;
@@ -351,15 +354,18 @@ footer p {
             justify-content: start;
   }
   header {
-    margin-top: 80px;
+    margin-top: 40px;
   }
   header .hero-text {
-    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .portfolio .portfolio-row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .skills {
+    margin-top: 120px;
   }
 }
 
@@ -369,7 +375,6 @@ footer p {
   }
   header .hero-text {
     padding-top: 80px;
-    margin-bottom: 80px;
     text-align: center;
   }
   header .hero-text h1 {
